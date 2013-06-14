@@ -1,6 +1,6 @@
 Aes::Application.routes.draw do
   get 'about'=> 'pages#about'
-
+  get 'schedule' => 'pages#schedule'
 
   root :to => 'pages#home'
 
