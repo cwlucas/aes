@@ -1,4 +1,4 @@
-Omrails::Application.routes.draw do
+Aes::Application.routes.draw do
   get 'about'=> 'pages#about'
 
 
