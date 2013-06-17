@@ -66,6 +66,6 @@ Aes::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   #replace with URL for heroku!
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => 'http://peaceful-badlands-3101.herokuapp.com' }
 end
 end
