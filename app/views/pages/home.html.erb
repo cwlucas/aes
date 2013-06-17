@@ -100,7 +100,7 @@
       top: 0;
       left: 0;
       min-width: 100%;
-      height: 500px;
+      height: auto; /*used to be 500px */
     }
 
     .carousel-caption {
@@ -331,17 +331,17 @@
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
-          <img src="http://i.imgur.com/XiBapcz.jpg" alt="">  <!-- these images should be assets! -->
+          <img src="http://baronbaptiste.com/wp-content/media/summitapp/slide_1.jpg" alt="">  
           <div class="container">
             <div class="carousel-caption">
               <h1>The Affiliate Empowerment Summit 2013.</h1>
               <p class="lead">Boom goes the dynamite.</p>
-              <a class="btn btn-large btn-primary" href="#">LOGIN</a>
+              <%= link_to "Sign Up", new_user_session_path, class: "btn btn-large btn-primary" %>
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="http://i.imgur.com/luPXCGn.jpg" alt=""> 
+          <img src="http://baronbaptiste.com/wp-content/media/summitapp/slide_2.jpg" alt=""> 
           <div class="container">
             <div class="carousel-caption">
               <h1>See the Schedule.</h1>
@@ -351,7 +351,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="http://i.imgur.com/gV7zAtk.jpg" alt="">
+          <img src="http://baronbaptiste.com/wp-content/media/summitapp/slide_3.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
               <h1>Names and Faces.</h1>
