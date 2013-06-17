@@ -1,5 +1,6 @@
 Aes::Application.routes.draw do
- 
+  devise_for :users
+
   get 'about'=> 'pages#about'
   get 'schedule' => 'pages#schedule'
   get 'directory' => 'pages#directory'

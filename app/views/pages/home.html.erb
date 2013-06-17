@@ -304,9 +304,20 @@
                     <li><a href="#">Separated link</a></li>
                     <li><a href="#">One more separated link</a></li>
                   </ul>
+              
                 </li>
               </ul>
             </div><!--/.nav-collapse -->
+                  <ul class="nav pull-right">
+                   <% if user_signed_in? %>
+                      <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
+                      <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+                    </ul>
+                   <% else %>
+                      <li><%= link_to "Login", new_user_session_path %></li>
+                   <% end %>
+
+
           </div><!-- /.navbar-inner -->
         </div><!-- /.navbar -->
 
