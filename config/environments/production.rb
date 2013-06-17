@@ -68,4 +68,3 @@ Aes::Application.configure do
   #replace with URL for heroku!
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end
-end
