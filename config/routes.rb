@@ -5,6 +5,7 @@ Aes::Application.routes.draw do
   get 'schedule' => 'pages#schedule'
   get 'directory' => 'pages#directory'
 
+
   root :to => 'pages#home'
 
   # The priority is based upon order of creation:
